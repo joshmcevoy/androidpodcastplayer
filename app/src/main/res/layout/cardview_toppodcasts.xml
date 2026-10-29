@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:elevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/tpPodcastImage"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/rn" />
+
+        <LinearLayout
+            android:id="@+id/textLL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tpPodcastImage"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tpPodcastRank"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat"/>
+            <TextView
+                android:id="@+id/tpPodcastName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="PodcastName"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

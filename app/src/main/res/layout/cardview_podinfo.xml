@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="265dp"
+    app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="12dp">
+        <ImageView
+            android:id="@+id/podInfoImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_weight="3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:srcCompat="@drawable/rn" />
+
+        <TextView
+            android:id="@+id/podInfoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Podcast Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/podInfoImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/podInfoProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:text="Provider"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toRightOf="@+id/podInfoImage"
+            app:layout_constraintTop_toBottomOf="@+id/podInfoName" />
+
+        <TextView
+            android:id="@+id/podInfoDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="This American Life (TAL) is an American monthly hour-long radio program produced in collaboration with Chicago Public Media and hosted by Ira Glass.[2] It is broadcast on numerous public radio stations in the United States and internationally, and is also available as a free monthly podcast. Primarily a journalistic non-fiction program, it has also featured essays, memoirs, field recordings, short fiction, and found footage. The first episode aired on November 17, 1995,[3] under the show's original title, Your Radio Playhouse. The series was distributed by Public Radio International[4] until June 2014, when the program became self-distributed with Public Radio Exchange delivering new episodes to public radio stations.[5]
+
+A television adaptation of the show ran for two seasons on the Showtime cable network[6] between June 2007 and May 2008."
+            android:maxHeight="92dp"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/podInfoImage" />
+
+        <Button
+            android:id="@+id/podInfoSubscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/podInfoDescription"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Subscribe" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
